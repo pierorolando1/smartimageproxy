@@ -1,0 +1,11 @@
+{
+  "banner.jpg": {
+    "conditions": [
+      {
+        "from": "2019-01-01",
+        "to": "2019-01-31",
+        "image": "banner-january.jpg"
+      }
+    ]
+  }
+}
