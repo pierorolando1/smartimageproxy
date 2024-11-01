@@ -8,7 +8,8 @@ setInterval(() => {
 }, config.UPDATE_INTERVAL);
 
 // Carpeta donde están las imágenes
-const imageFolder = "/home/pierorolando/Pictures/";
+const desktopImageFolder = "/home/pierorolando/Pictures/desktop/";
+const mobileImageFolder = "/home/pierorolando/Pictures/mobile/";
 
 // Función que carga el archivo JSON con las reglas de las imágenes
 const loadImageConfig = async () => {
@@ -19,6 +20,12 @@ const loadImageConfig = async () => {
 // Función que determina si la fecha actual está dentro de un rango
 const isInThisRange = (start: Date, end: Date): boolean => {
   return TODAY >= start && TODAY <= end;
+};
+
+// Función que detecta si el dispositivo es móvil
+const isMobile = (userAgent: string): boolean => {
+  const mobileRegex = /Mobile|Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i;
+  return mobileRegex.test(userAgent);
 };
 
 const router = new Router();
@@ -37,20 +44,27 @@ router.get("/(.*)", async (ctx) => {
     return;
   }
 
+  // Detectar si el usuario está usando un dispositivo móvil
+  const userAgent = ctx.request.headers.get("User-Agent") || "";
+  const isUserOnMobile = isMobile(userAgent);
+
   // Buscar una imagen que cumpla con las condiciones de fecha
-  const selectedImage = imageRules.conditions.find((rule: any) => {
+  const selectedImageRule = imageRules.conditions.find((rule: any) => {
     const startDate = new Date(rule.from);
     const endDate = new Date(rule.to);
     return isInThisRange(startDate, endDate);
-  })?.image;
+  });
 
-  if (!selectedImage) {
+  if (!selectedImageRule) {
     ctx.response.status = 404;
     ctx.response.body = "Imagen no encontrada";
     return;
   }
 
-  const imagePath = join(imageFolder, selectedImage);
+  // Seleccionar la imagen según el tipo de dispositivo
+  const selectedImage = isUserOnMobile ? selectedImageRule.image_mobile : selectedImageRule.image;
+
+  const imagePath = join(isUserOnMobile ? mobileImageFolder : desktopImageFolder, selectedImage);
 
   try {
     const imageFile = await Deno.open(imagePath, { read: true });
