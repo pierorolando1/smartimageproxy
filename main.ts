@@ -27,6 +27,7 @@ const isInThisRange = (start: Date, end: Date): boolean => {
 
 // Función que detecta si el dispositivo es móvil
 const isMobile = (userAgent: string): boolean => {
+  console.log(userAgent)
   const mobileRegex = /Mobile|Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i;
   return mobileRegex.test(userAgent);
 };
