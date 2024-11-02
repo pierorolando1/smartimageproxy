@@ -44,7 +44,8 @@ router.get("/imagesapi/(.*)", async (ctx) => {
   const imageConfig = await loadImageConfig();
 
 
-  const imagePath_ = urlPath.replace("/imagesapi/", ""  )
+  const imagePath_ = urlPath.replace("/imagesapi/", ""  ).replace("?unique=88872b3e", "")
+  
   console.log(imagePath_)
 
   const imageRules = imageConfig[imagePath_]; // Eliminar el "/" inicial
