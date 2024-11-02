@@ -2,171 +2,288 @@
   "banner-phone.jpg": {
     "conditions": [
       {
-        "from": "2024-01-01",
-        "to": "2024-11-31",
+        "from": "2025-01-01",
+        "to": "2025-01-10",
         "image": "EneCus.png",
         "image_mobile": "EneCus.png"
+      },
+      {
+        "from": "2025-01-10",
+        "to": "2025-01-20",
+        "image": "Ene1Col.png",
+        "image_mobile": "Ene1Col.png"
+      },
+      {
+        "from": "2025-01-20",
+        "to": "2025-01-31",
+        "image": "Ene2CUB.png",
+        "image_mobile": "Ene2CUB.png"
+      },
+      {
+        "from": "2025-02-01",
+        "to": "2025-02-28",
+        "image": "FebBra.png",
+        "image_mobile": "FebBra.png"
+      },
+      {
+        "from": "2025-02-28",
+        "to": "2025-03-31",
+        "image": "MarRepDo.png",
+        "image_mobile": "MarRepDo.png"
+      },
+      {
+        "from": "2025-03-31",
+        "to": "2025-04-30",
+        "image": "AbrArg.png",
+        "image_mobile": "AbrArg.png"
+      },
+      {
+        "from": "2025-04-30",
+        "to": "2025-05-07",
+        "image": "MayCan.png",
+        "image_mobile": "MayCan.png"
+      },
+      {
+        "from": "2025-05-07",
+        "to": "2025-05-14",
+        "image": "MayCan.png",
+        "image_mobile": "MayCan.png"
+      },
+      {
+        "from": "2025-05-14",
+        "to": "2025-05-21",
+        "image": "MayMex.png",
+        "image_mobile": "MayMex.png"
+      },
+      {
+        "from": "2025-05-21",
+        "to": "2025-05-31",
+        "image": "MayPan.png",
+        "image_mobile": "MayPan.png"
+      },
+      {
+        "from": "2025-05-31",
+        "to": "2025-06-30",
+        "image": "JunInd.png",
+        "image_mobile": "JunInd.png"
+      },
+      {
+        "from": "2025-06-30",
+        "to": "2025-07-31",
+        "image": "JulEur.png",
+        "image_mobile": "JulEur.png"
+      },
+      {
+        "from": "2025-07-31",
+        "to": "2025-08-31",
+        "image": "AgoEgi.png",
+        "image_mobile": "AgoEgi.png"
+      },
+      {
+        "from": "2025-08-31",
+        "to": "2025-09-30",
+        "image": "CapSet.png",
+        "image_mobile": "CapSet.png"
+      },
+      {
+        "from": "2025-09-30",
+        "to": "2025-10-31",
+        "image": "OctJor.png",
+        "image_mobile": "OctJor.png"
+      },
+      {
+        "from": "2024-10-31",
+        "to": "2024-11-15",
+        "image": "NovChi.png",
+        "image_mobile": "NovChi.png"
+      },
+      {
+        "from": "2024-11-15",
+        "to": "2024-11-30",
+        "image": "NovJap.png",
+        "image_mobile": "NovJap.png"
+      },
+      {
+        "from": "2024-11-30",
+        "to": "2024-12-31",
+        "image": "DicTai.png",
+        "image_mobile": "DicTai.png"
+      },
+      {
+        "from": "2024-12-31",
+        "to": "2025-01-01",
+        "image": "1CARRUSELCuzcoENERO.png",
+        "image_mobile": "EneCus.png"
+      },
+      {
+        "from": "2026-01-01",
+        "to": "2026-01-10",
+        "image": "1CartagenaColombia2ENERO.png",
+        "image_mobile": "Ene1Col.png"
+      },
+      {
+        "from": "2026-01-10",
+        "to": "2026-01-20",
+        "image": "1CartagenaColombia2ENERO.png",
+        "image_mobile": "Ene2CUB.png"
+      },
+      {
+        "from": "2026-01-20",
+        "to": "2026-01-31",
+        "image": "2iguazuBrasilArgentinaParaguayFEBRERO.png",
+        "image_mobile": "FebBra.png"
+      },
+      {
+        "from": "2026-02-01",
+        "to": "2026-02-28",
+        "image": "3RepublicaDominicanaMARZO.png",
+        "image_mobile": "MarRepDo.png"
+      },
+      {
+        "from": "2026-02-28",
+        "to": "2026-03-31",
+        "image": "5ChichenItzaMexicoMAYO.pngg",
+        "image_mobile": "AbrArg.png"
+      },
+      {
+        "from": "2026-03-31",
+        "to": "2026-04-30",
+        "image": "5CancunMexicoMAYO.png",
+        "image_mobile": "MayCan.png"
+      },
+      {
+        "from": "2026-04-30",
+        "to": "2026-05-07",
+        "image": "5ChichenItzaMexicoMAYO.png",
+        "image_mobile": "MayCan.png"
+      },
+      {
+        "from": "2026-05-07",
+        "to": "2026-05-14",
+        "image": "5IslaMujeresMexicoMAYO.png",
+        "image_mobile": "MayMex.png"
+      },
+      {
+        "from": "2026-05-14",
+        "to": "2026-05-21",
+        "image": "5PanamaMAYO.png",
+        "image_mobile": "MayPan.png"
       }
     ]
   },
   "banner.jpg": {
     "conditions": [
       {
-        "from": "2024-01-01",
-        "to": "2024-11-31",
+        "from": "2025-01-01",
+        "to": "2025-01-10",
         "image": "1CARRUSELCuzcoENERO.png",
         "image_mobile": "EneCus.png"
       },
       {
-        "from": "2019-02-01",
-        "to": "2019-02-31",
-        "image": "banner-febrero.jpg",
-        "image_mobile": "banner-febrero-mobile.jpg"
+        "from": "2025-01-10",
+        "to": "2025-01-20",
+        "image": "1CartagenaColombia2ENERO.png",
+        "image_mobile": "Ene1Col.png"
       },
 
       {
-        "from": "2019-02-01",
-        "to": "2019-02-31",
-        "image": "banner-febrero.jpg",
-        "image_mobile": "banner-febrero-mobile.jpg"
+        "from": "2025-01-20",
+        "to": "2025-01-31",
+        "image": "1CartagenaColombia2ENERO.png",
+        "image_mobile": "Ene2CUB.png"
       },
             {
-        "from": "2019-01-01",
-        "to": "2019-01-31",
-        "image": "banner-january.jpg",
-        "image_mobile": "banner-january-mobile.jpg"
+        "from": "2025-02-01",
+        "to": "2025-02-28",
+        "image": "2iguazuBrasilArgentinaParaguayFEBRERO.png",
+        "image_mobile": "FebBra.png"
       },
       {
-        "from": "2019-02-01",
-        "to": "2019-02-31",
-        "image": "banner-febrero.jpg",
-        "image_mobile": "banner-febrero-mobile.jpg"
+        "from": "2025-02-28",
+        "to": "2025-03-31",
+        "image": "3RepublicaDominicanaMARZO.png",
+        "image_mobile": "MarRepDo.png"
       },
 
       {
-        "from": "2019-02-01",
-        "to": "2019-02-31",
-        "image": "banner-febrero.jpg",
-        "image_mobile": "banner-febrero-mobile.jpg"
+        "from": "2025-03-31",
+        "to": "2025-04-30",
+        "image": "5ChichenItzaMexicoMAYO.pngg",
+        "image_mobile": "AbrArg.png"
+      },
+      {
+        "from": "2025-04-30",
+        "to": "2025-05-07",
+        "image": "5CancunMexicoMAYO.png",
+        "image_mobile": "MayCan.png"
+      },
+      {
+        "from": "2025-05-07",
+        "to": "2025-05-14",
+        "image": "5ChichenItzaMexicoMAYO.png",
+        "image_mobile": "MayCan.png"
+      },
+      {
+        "from": "2025-05-14",
+        "to": "2025-05-21",
+        "image": "5IslaMujeresMexicoMAYO.png",
+        "image_mobile": "MayMex.png"
+      },
+      {
+        "from": "2025-05-21",
+        "to": "2025-05-31",
+        "image": "5PanamaMAYO.png",
+        "image_mobile": "MayPan.png"
+      },
+      {
+        "from": "2025-05-31",
+        "to": "2025-06-30",
+        "image": "6TajMahalIndiaJUNIO.png",
+        "image_mobile": "JunInd.png"
+      },
+      {
+        "from": "2025-06-30",
+        "to": "2025-07-31",
+        "image": "7PisaItaliaJULIO.png",
+        "image_mobile": "JulEur.png"
+      },
+      {
+        "from": "2025-07-31",
+        "to": "2025-08-31",
+        "image": "8PiramidesEgiptoAGOSTO.png",
+        "image_mobile": "AgoEgi.png"
+      },
+      {
+        "from": "2025-08-31",
+        "to": "2025-09-30",
+        "image": "9CapadociaTurquiaSETIEMBRE.png",
+        "image_mobile": "CapSet.png"
+      },
+      {
+        "from": "2025-09-30",
+        "to": "2025-10-31",
+        "image": "10CARRUSELJerashJordaniaOCTUBRE.png",
+        "image_mobile": "OctJor.png"
+      },
+      {
+        "from": "2024-10-31",
+        "to": "2024-11-15",
+        "image": "11ChinaNOVIEMBRE.png",
+        "image_mobile": "NovChi.png"
       },
 
       {
-        "from": "2019-01-01",
-        "to": "2019-01-31",
-        "image": "banner-january.jpg",
-        "image_mobile": "banner-january-mobile.jpg"
+        "from": "2024-11-15",
+        "to": "2024-11-30",
+        "image": "11KyotoJaponNOVIEMBRE.png",
+        "image_mobile": "NovJap.png"
       },
       {
-        "from": "2019-02-01",
-        "to": "2019-02-31",
-        "image": "banner-febrero.jpg",
-        "image_mobile": "banner-febrero-mobile.jpg"
-      },
-
-      {
-        "from": "2019-02-01",
-        "to": "2019-02-31",
-        "image": "banner-febrero.jpg",
-        "image_mobile": "banner-febrero-mobile.jpg"
-      },
-      {
-        "from": "2019-01-01",
-        "to": "2019-01-31",
-        "image": "banner-january.jpg",
-        "image_mobile": "banner-january-mobile.jpg"
-      },
-      {
-        "from": "2019-02-01",
-        "to": "2019-02-31",
-        "image": "banner-febrero.jpg",
-        "image_mobile": "banner-febrero-mobile.jpg"
-      },
-
-      {
-        "from": "2019-02-01",
-        "to": "2019-02-31",
-        "image": "banner-febrero.jpg",
-        "image_mobile": "banner-febrero-mobile.jpg"
-      },
-
-      {
-        "from": "2019-01-01",
-        "to": "2019-01-31",
-        "image": "banner-january.jpg",
-        "image_mobile": "banner-january-mobile.jpg"
-      },
-      {
-        "from": "2019-02-01",
-        "to": "2019-02-31",
-        "image": "banner-febrero.jpg",
-        "image_mobile": "banner-febrero-mobile.jpg"
-      },
-
-      {
-        "from": "2019-02-01",
-        "to": "2019-02-31",
-        "image": "banner-febrero.jpg",
-        "image_mobile": "banner-febrero-mobile.jpg"
-      },
-            {
-        "from": "2019-01-01",
-        "to": "2019-01-31",
-        "image": "banner-january.jpg",
-        "image_mobile": "banner-january-mobile.jpg"
-      },
-      {
-        "from": "2019-02-01",
-        "to": "2019-02-31",
-        "image": "banner-febrero.jpg",
-        "image_mobile": "banner-febrero-mobile.jpg"
-      },
-
-      {
-        "from": "2019-02-01",
-        "to": "2019-02-31",
-        "image": "banner-febrero.jpg",
-        "image_mobile": "banner-febrero-mobile.jpg"
-      },
-
-      {
-        "from": "2019-01-01",
-        "to": "2019-01-31",
-        "image": "banner-january.jpg",
-        "image_mobile": "banner-january-mobile.jpg"
-      },
-      {
-        "from": "2019-02-01",
-        "to": "2019-02-31",
-        "image": "banner-febrero.jpg",
-        "image_mobile": "banner-febrero-mobile.jpg"
-      },
-
-      {
-        "from": "2019-02-01",
-        "to": "2019-02-31",
-        "image": "banner-febrero.jpg",
-        "image_mobile": "banner-febrero-mobile.jpg"
-      },
-      {
-        "from": "2019-01-01",
-        "to": "2019-01-31",
-        "image": "banner-january.jpg",
-        "image_mobile": "banner-january-mobile.jpg"
-      },
-      {
-        "from": "2019-02-01",
-        "to": "2019-02-31",
-        "image": "banner-febrero.jpg",
-        "image_mobile": "banner-febrero-mobile.jpg"
-      },
-
-      {
-        "from": "2019-02-01",
-        "to": "2019-02-31",
-        "image": "banner-febrero.jpg",
-        "image_mobile": "banner-febrero-mobile.jpg"
+        "from": "2024-11-30",
+        "to": "2024-12-31",
+        "image": "12TailandiaDICIEMBRE.png",
+        "image_mobile": "DicTai.png"
       }
-      
     ]
   }
 }
