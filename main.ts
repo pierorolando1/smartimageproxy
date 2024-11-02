@@ -44,7 +44,7 @@ router.get("/imagesapi/(.*)", async (ctx) => {
   const imageConfig = await loadImageConfig();
 
 
-  const imagePath_ = urlPath.replace("/imagesapi/", ""  ).replace("?unique=88872b3e", "")
+  const imagePath_ = urlPath.replace("/imagesapi/4627/", ""  ).replace("?unique=88872b3e", "").replace("/imagesapi/","")
   
   console.log(imagePath_)
 
