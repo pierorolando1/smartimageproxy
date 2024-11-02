@@ -87,15 +87,10 @@ router.get("/imagesapi/(.*)", async (ctx) => {
   try {
     const imageFile = await Deno.open(imagePath, { read: true });
 
-    console.log(imageFile)
+    ctx.response.status = 200;
+    ctx.response.headers.set("Content-Type", "image/jpeg");
+    ctx.response.body = imageFile;
 
-    ctx.send({
-	    root: imagePath
-    })
-
-    return new Response(imageFile.readable, {
-      headers: { "Content-Type": "image/jpeg" },
-    });
   } catch (error) {
     console.error(error);
     ctx.response.status = 500;
