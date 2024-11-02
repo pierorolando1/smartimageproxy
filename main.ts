@@ -8,18 +8,21 @@ setInterval(() => {
 }, config.UPDATE_INTERVAL);
 
 // Carpeta donde están las imágenes
-const desktopImageFolder = "/home/pierorolando/Pictures/desktop/";
-const mobileImageFolder = "/home/pierorolando/Pictures/mobile/";
+const desktopImageFolder = "/home/primatour/Pictures/desktop/";
+const mobileImageFolder = "/home/primatour/Pictures/mobile/";
 
 // Función que carga el archivo JSON con las reglas de las imágenes
 const loadImageConfig = async () => {
-  const json = await Deno.readTextFile("./image-config.json");
+  const json = await Deno.readTextFile("./config.json");
   return JSON.parse(json);
 };
 
 // Función que determina si la fecha actual está dentro de un rango
 const isInThisRange = (start: Date, end: Date): boolean => {
-  return TODAY >= start && TODAY <= end;
+
+	console.log(TODAY)
+
+	return TODAY >= start && TODAY <= end;
 };
 
 // Función que detecta si el dispositivo es móvil
@@ -30,14 +33,22 @@ const isMobile = (userAgent: string): boolean => {
 
 const router = new Router();
 
-router.get("/(.*)", async (ctx) => {
+router.get("/imagesapi/(.*)", async (ctx) => {
   const urlPath = ctx.request.url.pathname;
-  
+
+  console.log(urlPath)
+
+
   // Cargar la configuración de imágenes desde el archivo JSON
   const imageConfig = await loadImageConfig();
 
-  const imageRules = imageConfig[urlPath.substring(1)]; // Eliminar el "/" inicial
-  
+
+  const imagePath_ = urlPath.replace("/imagesapi/", ""  )
+  console.log(imagePath_)
+
+  const imageRules = imageConfig[imagePath_]; // Eliminar el "/" inicial
+
+
   if (!imageRules) {
     ctx.response.status = 404;
     ctx.response.body = "Imagen no encontrada";
@@ -52,8 +63,13 @@ router.get("/(.*)", async (ctx) => {
   const selectedImageRule = imageRules.conditions.find((rule: any) => {
     const startDate = new Date(rule.from);
     const endDate = new Date(rule.to);
+
+    console.log(startDate, endDate)
+    console.log( isInThisRange(startDate, endDate) )
     return isInThisRange(startDate, endDate);
   });
+
+  console.log(selectedImageRule)
 
   if (!selectedImageRule) {
     ctx.response.status = 404;
@@ -66,8 +82,16 @@ router.get("/(.*)", async (ctx) => {
 
   const imagePath = join(isUserOnMobile ? mobileImageFolder : desktopImageFolder, selectedImage);
 
+  console.log(imagePath)
+
   try {
     const imageFile = await Deno.open(imagePath, { read: true });
+
+    console.log(imageFile)
+
+    ctx.send({
+	    root: imagePath
+    })
 
     return new Response(imageFile.readable, {
       headers: { "Content-Type": "image/jpeg" },

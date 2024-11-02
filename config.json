@@ -2,7 +2,7 @@
   "banner.jpg": {
     "conditions": [
       {
-        "from": "2024-11-01",
+        "from": "2024-01-01",
         "to": "2024-11-31",
         "image": "1CARRUSELCuzcoENERO.png",
         "image_mobile": "EneCus.png"
