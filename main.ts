@@ -58,7 +58,7 @@ router.get("/imagesapi/(.*)", async (ctx) => {
 
   // Detectar si el usuario está usando un dispositivo móvil
   const userAgent = ctx.request.headers.get("User-Agent") || "";
-  const isUserOnMobile = isMobile(userAgent);
+  const isUserOnMobile = isMobile(userAgent) || imagePath_.includes("phone")
 
   // Buscar una imagen que cumpla con las condiciones de fecha
   const selectedImageRule = imageRules.conditions.find((rule: any) => {
