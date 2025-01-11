@@ -92,28 +92,22 @@
         "image_mobile": "OctJor.png"
       },
       {
-        "from": "2024-10-31",
-        "to": "2024-11-15",
-        "image": "NovChi.png",
-        "image_mobile": "NovChi.png"
-      },
-      {
-        "from": "2024-11-15",
-        "to": "2024-11-30",
+        "from": "2024-12-15",
+        "to": "2024-12-31",
         "image": "NovJap.png",
         "image_mobile": "NovJap.png"
       },
       {
-        "from": "2024-11-30",
-        "to": "2024-12-31",
-        "image": "DicTai.png",
-        "image_mobile": "DicTai.png"
+        "from": "2024-11-01",
+        "to": "2024-11-30",
+        "image": "JorOct.png",
+        "image_mobile": "JorOct.png"
       },
       {
-        "from": "2024-12-31",
-        "to": "2025-01-01",
-        "image": "1CARRUSELCuzcoENERO.png",
-        "image_mobile": "EneCus.png"
+        "from": "2024-11-30",
+        "to": "2024-12-15",
+        "image": "NovChi.png",
+        "image_mobile": "NovChi.png"
       },
       {
         "from": "2026-01-01",
@@ -185,14 +179,13 @@
         "image": "1CartagenaColombia2ENERO.png",
         "image_mobile": "Ene1Col.png"
       },
-
       {
         "from": "2025-01-20",
         "to": "2025-01-31",
         "image": "1CartagenaColombia2ENERO.png",
         "image_mobile": "Ene2CUB.png"
       },
-            {
+      {
         "from": "2025-02-01",
         "to": "2025-02-28",
         "image": "2iguazuBrasilArgentinaParaguayFEBRERO.png",
@@ -204,7 +197,6 @@
         "image": "3RepublicaDominicanaMARZO.png",
         "image_mobile": "MarRepDo.png"
       },
-
       {
         "from": "2025-03-31",
         "to": "2025-04-30",
@@ -260,21 +252,20 @@
         "image_mobile": "CapSet.png"
       },
       {
-        "from": "2025-09-30",
-        "to": "2025-10-31",
+        "from": "2024-11-01",
+        "to": "2024-11-30",
         "image": "10CARRUSELJerashJordaniaOCTUBRE.png",
         "image_mobile": "OctJor.png"
       },
       {
-        "from": "2024-10-31",
-        "to": "2024-11-15",
+        "from": "2024-12-01",
+        "to": "2024-12-15",
         "image": "11ChinaNOVIEMBRE.png",
         "image_mobile": "NovChi.png"
       },
-
       {
-        "from": "2024-11-15",
-        "to": "2024-11-30",
+        "from": "2024-12-15",
+        "to": "2024-12-31",
         "image": "11KyotoJaponNOVIEMBRE.png",
         "image_mobile": "NovJap.png"
       },
