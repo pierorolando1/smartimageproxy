@@ -8,8 +8,8 @@ setInterval(() => {
 }, config.UPDATE_INTERVAL);
 
 // Carpeta donde están las imágenes
-const desktopImageFolder = "/home/primatour/Pictures/desktop/";
-const mobileImageFolder = "/home/primatour/Pictures/mobile/";
+const desktopImageFolder = "/app/desktop/";
+const mobileImageFolder = "/app/mobile/";
 
 // Función que carga el archivo JSON con las reglas de las imágenes
 const loadImageConfig = async () => {
