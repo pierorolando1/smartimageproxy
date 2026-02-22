@@ -1,110 +1,100 @@
-import { Application, Router } from "jsr:@oak/oak";
 import { join } from "https://deno.land/std@0.180.0/path/mod.ts";
-import { config } from "./config.ts"; 
+import { config } from "./config.ts";
 
 let TODAY = new Date();
 setInterval(() => {
   TODAY = new Date();
 }, config.UPDATE_INTERVAL);
 
-// Carpeta donde están las imágenes
-const desktopImageFolder = "/app/desktop/";
-const mobileImageFolder = "/app/mobile/";
+// Image folders
+const desktopImageFolder = "/app/primatourpc/";
+const mobileImageFolder = "/app/primatourcelular/";
 
-// Función que carga el archivo JSON con las reglas de las imágenes
+// Load image rules from config.json
 const loadImageConfig = async () => {
   const json = await Deno.readTextFile("./config.json");
   return JSON.parse(json);
 };
 
-// Función que determina si la fecha actual está dentro de un rango
+// Check if today falls within a date range (inclusive, end date is end of day)
 const isInThisRange = (start: Date, end: Date): boolean => {
-
-	console.log(TODAY)
-
-	return TODAY >= start && TODAY <= end;
+  const endOfDay = new Date(end);
+  endOfDay.setHours(23, 59, 59, 999);
+  return TODAY >= start && TODAY <= endOfDay;
 };
 
-// Función que detecta si el dispositivo es móvil
+// Detect mobile device from User-Agent
 const isMobile = (userAgent: string): boolean => {
-  console.log(userAgent)
   const mobileRegex = /Mobile|Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i;
   return mobileRegex.test(userAgent);
 };
 
-const router = new Router();
+// Detect image MIME type from extension
+const getMimeType = (filename: string): string => {
+  const ext = filename.split(".").pop()?.toLowerCase();
+  if (ext === "png") return "image/png";
+  if (ext === "gif") return "image/gif";
+  if (ext === "webp") return "image/webp";
+  return "image/jpeg";
+};
 
-router.get("/imagesapi/(.*)", async (ctx) => {
-  const urlPath = ctx.request.url.pathname;
+async function handler(req: Request): Promise<Response> {
+  const url = new URL(req.url);
+  const pathname = url.pathname;
 
-  console.log(urlPath)
+  // Only handle /imagesapi/* routes
+  if (!pathname.startsWith("/imagesapi/")) {
+    return new Response("Not found", { status: 404 });
+  }
 
-
-  // Cargar la configuración de imágenes desde el archivo JSON
   const imageConfig = await loadImageConfig();
 
+  // Normalize path: strip numeric prefix variants
+  const imagePath_ = pathname
+    .replace(/^\/imagesapi\/\d+\//, "")
+    .replace(/^\/imagesapi\//, "");
 
-  const imagePath_ = urlPath.replace("/imagesapi/4627/", ""  ).replace("?unique=88872b3e", "").replace("/imagesapi/","")
-  
-  console.log(imagePath_)
-
-  const imageRules = imageConfig[imagePath_]; // Eliminar el "/" inicial
-
+  const imageRules = imageConfig[imagePath_];
 
   if (!imageRules) {
-    ctx.response.status = 404;
-    ctx.response.body = "Imagen no encontrada";
-    return;
+    return new Response("Imagen no encontrada", { status: 404 });
   }
 
-  // Detectar si el usuario está usando un dispositivo móvil
-  const userAgent = ctx.request.headers.get("User-Agent") || "";
-  const isUserOnMobile = isMobile(userAgent) || imagePath_.includes("phone")
+  // Detect device type
+  const userAgent = req.headers.get("User-Agent") ?? "";
+  const isUserOnMobile = isMobile(userAgent) || imagePath_.includes("phone");
 
-  // Buscar una imagen que cumpla con las condiciones de fecha
-  const selectedImageRule = imageRules.conditions.find((rule: any) => {
-    const startDate = new Date(rule.from);
-    const endDate = new Date(rule.to);
-
-    console.log(startDate, endDate)
-    console.log( isInThisRange(startDate, endDate) )
-    return isInThisRange(startDate, endDate);
+  // Find the matching date-range rule
+  const selectedImageRule = imageRules.conditions.find((rule: { from: string; to: string }) => {
+    return isInThisRange(new Date(rule.from), new Date(rule.to));
   });
 
-  console.log(selectedImageRule)
-
   if (!selectedImageRule) {
-    ctx.response.status = 404;
-    ctx.response.body = "Imagen no encontrada";
-    return;
+    return new Response("Imagen no encontrada para la fecha actual", { status: 404 });
   }
 
-  // Seleccionar la imagen según el tipo de dispositivo
-  const selectedImage = isUserOnMobile ? selectedImageRule.image_mobile : selectedImageRule.image;
+  // Pick desktop or mobile image
+  const selectedImage: string = isUserOnMobile
+    ? selectedImageRule.image_mobile
+    : selectedImageRule.image;
 
-  const imagePath = join(isUserOnMobile ? mobileImageFolder : desktopImageFolder, selectedImage);
-
-  console.log(imagePath)
+  const imagePath = join(
+    isUserOnMobile ? mobileImageFolder : desktopImageFolder,
+    selectedImage,
+  );
 
   try {
-    const imageFile = await Deno.open(imagePath, { read: true });
-
-    ctx.response.status = 200;
-    ctx.response.headers.set("Content-Type", "image/jpeg");
-    ctx.response.body = imageFile;
-
+    const imageData = await Deno.readFile(imagePath);
+    return new Response(imageData, {
+      status: 200,
+      headers: { "Content-Type": getMimeType(selectedImage) },
+    });
   } catch (error) {
-    console.error(error);
-    ctx.response.status = 500;
-    ctx.response.body = "Error al leer la imagen";
+    console.error(`Error reading image: ${imagePath}`, error);
+    return new Response("Error al leer la imagen", { status: 500 });
   }
-});
+}
 
-const app = new Application();
-
-app.use(router.routes());
-app.use(router.allowedMethods());
-
-console.log(`Servidor de imágenes proxy con Oak escuchando en ${config.PORT}`);
-await app.listen({ port: config.PORT });
+console.log(`SmartImageProxy listening on port ${config.PORT}`);
+Deno.serve({ port: config.PORT }, handler);
 

@@ -1,280 +1,114 @@
 {
-  "banner-phone.jpg": {
-    "conditions": [
-      {
-        "from": "2025-01-01",
-        "to": "2025-01-10",
-        "image": "EneCus.png",
-        "image_mobile": "EneCus.png"
-      },
-      {
-        "from": "2025-01-10",
-        "to": "2025-01-20",
-        "image": "Ene1Col.png",
-        "image_mobile": "Ene1Col.png"
-      },
-      {
-        "from": "2025-01-20",
-        "to": "2025-01-31",
-        "image": "Ene2CUB.png",
-        "image_mobile": "Ene2CUB.png"
-      },
-      {
-        "from": "2025-02-01",
-        "to": "2025-02-28",
-        "image": "FebBra.png",
-        "image_mobile": "FebBra.png"
-      },
-      {
-        "from": "2025-02-28",
-        "to": "2025-03-31",
-        "image": "MarRepDo.png",
-        "image_mobile": "MarRepDo.png"
-      },
-      {
-        "from": "2025-03-31",
-        "to": "2025-04-30",
-        "image": "AbrArg.png",
-        "image_mobile": "AbrArg.png"
-      },
-      {
-        "from": "2025-04-30",
-        "to": "2025-05-07",
-        "image": "MayCan.png",
-        "image_mobile": "MayCan.png"
-      },
-      {
-        "from": "2025-05-07",
-        "to": "2025-05-14",
-        "image": "MayCan.png",
-        "image_mobile": "MayCan.png"
-      },
-      {
-        "from": "2025-05-14",
-        "to": "2025-05-21",
-        "image": "MayMex.png",
-        "image_mobile": "MayMex.png"
-      },
-      {
-        "from": "2025-05-21",
-        "to": "2025-05-31",
-        "image": "MayPan.png",
-        "image_mobile": "MayPan.png"
-      },
-      {
-        "from": "2025-05-31",
-        "to": "2025-06-30",
-        "image": "JunInd.png",
-        "image_mobile": "JunInd.png"
-      },
-      {
-        "from": "2025-06-30",
-        "to": "2025-07-31",
-        "image": "JulEur.png",
-        "image_mobile": "JulEur.png"
-      },
-      {
-        "from": "2025-07-31",
-        "to": "2025-08-31",
-        "image": "AgoEgi.png",
-        "image_mobile": "AgoEgi.png"
-      },
-      {
-        "from": "2025-08-31",
-        "to": "2025-09-30",
-        "image": "CapSet.png",
-        "image_mobile": "CapSet.png"
-      },
-      {
-        "from": "2025-09-30",
-        "to": "2025-10-31",
-        "image": "OctJor.png",
-        "image_mobile": "OctJor.png"
-      },
-      {
-        "from": "2024-12-15",
-        "to": "2024-12-31",
-        "image": "NovJap.png",
-        "image_mobile": "NovJap.png"
-      },
-      {
-        "from": "2024-11-01",
-        "to": "2024-11-30",
-        "image": "JorOct.png",
-        "image_mobile": "JorOct.png"
-      },
-      {
-        "from": "2024-11-30",
-        "to": "2024-12-15",
-        "image": "NovChi.png",
-        "image_mobile": "NovChi.png"
-      },
-      {
-        "from": "2026-01-01",
-        "to": "2026-01-10",
-        "image": "1CartagenaColombia2ENERO.png",
-        "image_mobile": "Ene1Col.png"
-      },
-      {
-        "from": "2026-01-10",
-        "to": "2026-01-20",
-        "image": "1CartagenaColombia2ENERO.png",
-        "image_mobile": "Ene2CUB.png"
-      },
-      {
-        "from": "2026-01-20",
-        "to": "2026-01-31",
-        "image": "2iguazuBrasilArgentinaParaguayFEBRERO.png",
-        "image_mobile": "FebBra.png"
-      },
-      {
-        "from": "2026-02-01",
-        "to": "2026-02-28",
-        "image": "3RepublicaDominicanaMARZO.png",
-        "image_mobile": "MarRepDo.png"
-      },
-      {
-        "from": "2026-02-28",
-        "to": "2026-03-31",
-        "image": "5ChichenItzaMexicoMAYO.pngg",
-        "image_mobile": "AbrArg.png"
-      },
-      {
-        "from": "2026-03-31",
-        "to": "2026-04-30",
-        "image": "5CancunMexicoMAYO.png",
-        "image_mobile": "MayCan.png"
-      },
-      {
-        "from": "2026-04-30",
-        "to": "2026-05-07",
-        "image": "5ChichenItzaMexicoMAYO.png",
-        "image_mobile": "MayCan.png"
-      },
-      {
-        "from": "2026-05-07",
-        "to": "2026-05-14",
-        "image": "5IslaMujeresMexicoMAYO.png",
-        "image_mobile": "MayMex.png"
-      },
-      {
-        "from": "2026-05-14",
-        "to": "2026-05-21",
-        "image": "5PanamaMAYO.png",
-        "image_mobile": "MayPan.png"
-      }
-    ]
-  },
   "banner.jpg": {
     "conditions": [
-      {
-        "from": "2025-01-01",
-        "to": "2025-01-10",
-        "image": "1CARRUSELCuzcoENERO.png",
-        "image_mobile": "EneCus.png"
-      },
-      {
-        "from": "2025-01-10",
-        "to": "2025-01-20",
-        "image": "1CartagenaColombia2ENERO.png",
-        "image_mobile": "Ene1Col.png"
-      },
-      {
-        "from": "2025-01-20",
-        "to": "2025-01-31",
-        "image": "1CartagenaColombia2ENERO.png",
-        "image_mobile": "Ene2CUB.png"
-      },
-      {
-        "from": "2025-02-01",
-        "to": "2025-02-28",
-        "image": "2iguazuBrasilArgentinaParaguayFEBRERO.png",
-        "image_mobile": "FebBra.png"
-      },
-      {
-        "from": "2025-02-28",
-        "to": "2025-03-31",
-        "image": "3RepublicaDominicanaMARZO.png",
-        "image_mobile": "MarRepDo.png"
-      },
-      {
-        "from": "2025-03-31",
-        "to": "2025-04-30",
-        "image": "5ChichenItzaMexicoMAYO.pngg",
-        "image_mobile": "AbrArg.png"
-      },
-      {
-        "from": "2025-04-30",
-        "to": "2025-05-07",
-        "image": "5CancunMexicoMAYO.png",
-        "image_mobile": "MayCan.png"
-      },
-      {
-        "from": "2025-05-07",
-        "to": "2025-05-14",
-        "image": "5ChichenItzaMexicoMAYO.png",
-        "image_mobile": "MayCan.png"
-      },
-      {
-        "from": "2025-05-14",
-        "to": "2025-05-21",
-        "image": "5IslaMujeresMexicoMAYO.png",
-        "image_mobile": "MayMex.png"
-      },
-      {
-        "from": "2025-05-21",
-        "to": "2025-05-31",
-        "image": "5PanamaMAYO.png",
-        "image_mobile": "MayPan.png"
-      },
-      {
-        "from": "2025-05-31",
-        "to": "2025-06-30",
-        "image": "6TajMahalIndiaJUNIO.png",
-        "image_mobile": "JunInd.png"
-      },
-      {
-        "from": "2025-06-30",
-        "to": "2025-07-31",
-        "image": "7PisaItaliaJULIO.png",
-        "image_mobile": "JulEur.png"
-      },
-      {
-        "from": "2025-07-31",
-        "to": "2025-08-31",
-        "image": "8PiramidesEgiptoAGOSTO.png",
-        "image_mobile": "AgoEgi.png"
-      },
-      {
-        "from": "2025-08-31",
-        "to": "2025-09-30",
-        "image": "9CapadociaTurquiaSETIEMBRE.png",
-        "image_mobile": "CapSet.png"
-      },
-      {
-        "from": "2024-11-01",
-        "to": "2024-11-30",
-        "image": "10CARRUSELJerashJordaniaOCTUBRE.png",
-        "image_mobile": "OctJor.png"
-      },
-      {
-        "from": "2024-12-01",
-        "to": "2024-12-15",
-        "image": "11ChinaNOVIEMBRE.png",
-        "image_mobile": "NovChi.png"
-      },
-      {
-        "from": "2024-12-15",
-        "to": "2024-12-31",
-        "image": "11KyotoJaponNOVIEMBRE.png",
-        "image_mobile": "NovJap.png"
-      },
-      {
-        "from": "2024-11-30",
-        "to": "2024-12-31",
-        "image": "12TailandiaDICIEMBRE.png",
-        "image_mobile": "DicTai.png"
-      }
+      { "from": "2025-12-29", "to": "2026-01-04", "image": "Sem01CuscoMACCHUPICCHU.webp", "image_mobile": "Sem01CuscoMACCHUPICCHU.webp" },
+      { "from": "2026-01-05", "to": "2026-01-11", "image": "Sem02CuscoMONTAÑADE7COLORES.webp", "image_mobile": "Sem02CuscoMONTAÑADE7COLORES.webp" },
+      { "from": "2026-01-12", "to": "2026-01-18", "image": "Sem03ColombiaCARTAGENADEINDIAS.webp", "image_mobile": "Sem03ColombiaCARTAGENADEINDIAS.webp" },
+      { "from": "2026-01-19", "to": "2026-01-25", "image": "Sem04ColombiaCENTROHISTORICOCARTAGENADEINDIAS.webp", "image_mobile": "Sem04ColombiaCENTROHISTORICOCARTAGENADEINDIAS.webp" },
+      { "from": "2026-01-26", "to": "2026-02-01", "image": "Sem05CubaLAHABANA.webp", "image_mobile": "Sem05CubaLAHABANA.webp" },
+      { "from": "2026-02-02", "to": "2026-02-08", "image": "Sem06BrasilRIODEJANEIRO.webp", "image_mobile": "Sem06BrasilRIODEJANEIRO.webp" },
+      { "from": "2026-02-09", "to": "2026-02-15", "image": "Sem07BrasilCATARATASDELIGUAZU.webp", "image_mobile": "Sem07BrasilCATARATASDELIGUAZU.webp" },
+      { "from": "2026-02-16", "to": "2026-02-22", "image": "Sem08BrasilLençoisMaranhenses(Maranhão).webp", "image_mobile": "Sem08BrasilLençoisMaranhenses(Maranhão).webp" },
+      { "from": "2026-02-23", "to": "2026-03-01", "image": "Sem09BrasilPelourinho(SalvadordeBahia).webp", "image_mobile": "Sem09BrasilPelourinho(SalvadordeBahia).webp" },
+      { "from": "2026-03-02", "to": "2026-03-08", "image": "Sem10RepublicaDominicanaSANTODOMINGO.webp", "image_mobile": "Sem10RepublicaDominicanaSANTODOMINGO.webp" },
+      { "from": "2026-03-09", "to": "2026-03-15", "image": "Sem11RepublicaDominicanaPuntaCanayBavaro.webp", "image_mobile": "Sem11RepublicaDominicanaPuntaCanayBavaro.webp" },
+      { "from": "2026-03-16", "to": "2026-03-22", "image": "Sem12RepublicaDominicanaALTOSDECHAVON.webp", "image_mobile": "Sem12RepublicaDominicanaALTOSDECHAVON.webp" },
+      { "from": "2026-03-23", "to": "2026-03-29", "image": "Sem13RepublicaDominicana.webp", "image_mobile": "Sem13RepublicaDominicana.webp" },
+      { "from": "2026-03-30", "to": "2026-04-05", "image": "Sem14ArgentinaGLACIARPERITOMORENO.webp", "image_mobile": "Sem14ArgentinaGLACIARPERITOMORENO.webp" },
+      { "from": "2026-04-06", "to": "2026-04-12", "image": "Sem15ArgentinaCIUDADDEBUENOSAIRES.webp", "image_mobile": "Sem15ArgentinaCIUDADDEBUENOSAIRES.webp" },
+      { "from": "2026-04-13", "to": "2026-04-19", "image": "Sem16ArgentinaCATEDRALDESANCARLOSDEBARILOCHE.webp", "image_mobile": "Sem16ArgentinaCATEDRALDESANCARLOSDEBARILOCHE.webp" },
+      { "from": "2026-04-20", "to": "2026-04-26", "image": "Sem17ArgentinaSALINASGRANDESJUJUY.webp", "image_mobile": "Sem17ArgentinaSALINASGRANDESJUJUY.webp" },
+      { "from": "2026-04-27", "to": "2026-05-03", "image": "Sem18PanamaCALZADADEAMDORE(CAUSEWAY).webp", "image_mobile": "Sem18PanamaIslaParaiso,SanBlas.webp" },
+      { "from": "2026-05-04", "to": "2026-05-10", "image": "Sem19Panama.webp", "image_mobile": "Sem19Panama.webp" },
+      { "from": "2026-05-11", "to": "2026-05-17", "image": "Sem20MexicoChichenItzaMexico.webp", "image_mobile": "Sem20MexicoChichenItzaMexico.webp" },
+      { "from": "2026-05-18", "to": "2026-05-24", "image": "Sem21MexicoIslaMujeres.webp", "image_mobile": "Sem21MexicoIslaMujeres.webp" },
+      { "from": "2026-05-25", "to": "2026-05-31", "image": "Sem22MexicoCancun.webp", "image_mobile": "Sem22MexicoCancun.webp" },
+      { "from": "2026-06-01", "to": "2026-06-07", "image": "Sem23IndiaTajMahal.webp", "image_mobile": "Sem23IndiaTajMahal.webp" },
+      { "from": "2026-06-08", "to": "2026-06-14", "image": "Sem24IndiaGhatsdelrioGanges(Varanasi).webp", "image_mobile": "Sem24IndiaGhatsdelrioGanges(Varanasi).webp" },
+      { "from": "2026-06-15", "to": "2026-06-21", "image": "Sem25IndiaTemploDorado(Amritsar).webp", "image_mobile": "Sem25IndiaTemploDorado(Amritsar).webp" },
+      { "from": "2026-06-22", "to": "2026-06-28", "image": "Sem26IndiaHawaMahal(Jaipur).webp", "image_mobile": "Sem26IndiaHawaMahal(Jaipur).webp" },
+      { "from": "2026-06-29", "to": "2026-07-05", "image": "Sem27EuropaMUSEODELLOUVRE.webp", "image_mobile": "Sem27EuropaToorreEiffel.webp" },
+      { "from": "2026-07-06", "to": "2026-07-12", "image": "Sem28EuropaROMA.webp", "image_mobile": "Sem28EuropaROMA.webp" },
+      { "from": "2026-07-13", "to": "2026-07-19", "image": "Sem29EuropaBARCELONABASILICADELASAGRADAFAMILIA.webp", "image_mobile": "Sem29EuropaBARCELONABASILICADELASAGRADAFAMILIA.webp" },
+      { "from": "2026-07-20", "to": "2026-07-26", "image": "Sem30EuropaLONDRESREINOUNIDO.webp", "image_mobile": "Sem30EuropaLONDRESREINOUNIDO.webp" },
+      { "from": "2026-07-27", "to": "2026-08-02", "image": "Sem31EuropaVENECIAITALIA.webp", "image_mobile": "Sem31EuropaVENECIAITALIA.webp" },
+      { "from": "2026-08-03", "to": "2026-08-09", "image": "Sem32EgiptoPiramidesdeGizaylaGranEsfinge(ElCairo).webp", "image_mobile": "Sem32EgiptoPiramidesdeGizaylaGranEsfinge(ElCairo).webp" },
+      { "from": "2026-08-10", "to": "2026-08-16", "image": "Sem33EgiptoVALLEDELOSREYES(LUXOR).webp", "image_mobile": "Sem33EgiptoVALLEDELOSREYES(LUXOR).webp" },
+      { "from": "2026-08-17", "to": "2026-08-23", "image": "Sem34EgiptoTemplosdeAbuSimbel(Asuan).webp", "image_mobile": "Sem34EgiptoTemplosdeAbuSimbel(Asuan).webp" },
+      { "from": "2026-08-24", "to": "2026-08-30", "image": "Sem35EgiptoRioNiloenAsuan.webp", "image_mobile": "Sem35EgiptoRioNiloenAsuan.png" },
+      { "from": "2026-08-31", "to": "2026-09-06", "image": "Sem36TurquiaSantaSofiaenEstambul.webp", "image_mobile": "Sem36TurquiaSantaSofiaenEstambul.webp" },
+      { "from": "2026-09-07", "to": "2026-09-13", "image": "Sem37TurquiaCAPPADOCIA.webp", "image_mobile": "Sem37TurquiaCAPPADOCIA.webp" },
+      { "from": "2026-09-14", "to": "2026-09-20", "image": "Sem38TurquiaPamukkale(CastillodeAlgodon).webp", "image_mobile": "Sem38TurquiaPamukkale(CastillodeAlgodon).webp" },
+      { "from": "2026-09-21", "to": "2026-09-27", "image": "Sem39TurquiaAntalya.webp", "image_mobile": "Sem39TurquiaAntalya.webp" },
+      { "from": "2026-09-28", "to": "2026-10-04", "image": "Sem40JordaniaPETRA.webp", "image_mobile": "Sem40JordaniaPETRA.webp" },
+      { "from": "2026-10-05", "to": "2026-10-11", "image": "Sem41JordaniaWadiRum.webp", "image_mobile": "Sem41JordaniaWadiRum.webp" },
+      { "from": "2026-10-12", "to": "2026-10-18", "image": "Sem42JordaniaMARMUERTO.webp", "image_mobile": "Sem42JordaniaMARMUERTO.webp" },
+      { "from": "2026-10-19", "to": "2026-10-25", "image": "Sem43JordaniaCIUDADELADEAMMAN.webp", "image_mobile": "Sem43JordaniaCIUDADELADEAMMAN.webp" },
+      { "from": "2026-10-26", "to": "2026-11-01", "image": "Sem44ChinaLaGranMurallaChina(Pekin).webp", "image_mobile": "Sem44ChinaLaGranMurallaChina(Pekin).webp" },
+      { "from": "2026-11-02", "to": "2026-11-08", "image": "Sem45ChinaLaCiudadProhibida(Pekin).webp", "image_mobile": "Sem45ChinaLaCiudadProhibida(Pekin).webp" },
+      { "from": "2026-11-09", "to": "2026-11-15", "image": "Sem46ChinaLosGuerrerosdeTerracota(Xi'an).webp", "image_mobile": "Sem46ChinaLosGuerrerosdeTerracota(Xi'an).webp" },
+      { "from": "2026-11-16", "to": "2026-11-22", "image": "Sem47JaponMonteFuji(RegiondelosCincoLagos).webp", "image_mobile": "Sem47JaponMonteFuji(RegiondelosCincoLagos).webp" },
+      { "from": "2026-11-23", "to": "2026-11-29", "image": "Sem48JaponSantuarioFushimiInari-taisha(Kioto).webp", "image_mobile": "Sem48JaponSantuarioFushimiInari-taisha(Kioto).webp" },
+      { "from": "2026-11-30", "to": "2026-12-06", "image": "Sem49JaponKinkaku-ji(PabellonDoradoenKioto).webp", "image_mobile": "Sem49JaponKinkaku-ji(PabellonDoradoenKioto).webp" },
+      { "from": "2026-12-07", "to": "2026-12-13", "image": "Sem50TailandiaTemplodePhraKaew.webp", "image_mobile": "Sem50TailandiaTemplodePhraKaew.webp" },
+      { "from": "2026-12-14", "to": "2026-12-20", "image": "Sem51TailandiaWatRongKhun(TemploBlanco)(ChiangRai).webp", "image_mobile": "Sem51TailandiaWatRongKhun(TemploBlanco)(ChiangRai).webp" },
+      { "from": "2026-12-21", "to": "2026-12-28", "image": "Sem52TailandiaIslasPhiPhiyMayaBay(Krabi).webp", "image_mobile": "Sem52TailandiaIslasPhiPhiyMayaBay(Krabi).webp" }
+    ]
+  },
+  "banner-phone.jpg": {
+    "conditions": [
+      { "from": "2025-12-29", "to": "2026-01-04", "image": "Sem01CuscoMACCHUPICCHU.webp", "image_mobile": "Sem01CuscoMACCHUPICCHU.webp" },
+      { "from": "2026-01-05", "to": "2026-01-11", "image": "Sem02CuscoMONTAÑADE7COLORES.webp", "image_mobile": "Sem02CuscoMONTAÑADE7COLORES.webp" },
+      { "from": "2026-01-12", "to": "2026-01-18", "image": "Sem03ColombiaCARTAGENADEINDIAS.webp", "image_mobile": "Sem03ColombiaCARTAGENADEINDIAS.webp" },
+      { "from": "2026-01-19", "to": "2026-01-25", "image": "Sem04ColombiaCENTROHISTORICOCARTAGENADEINDIAS.webp", "image_mobile": "Sem04ColombiaCENTROHISTORICOCARTAGENADEINDIAS.webp" },
+      { "from": "2026-01-26", "to": "2026-02-01", "image": "Sem05CubaLAHABANA.webp", "image_mobile": "Sem05CubaLAHABANA.webp" },
+      { "from": "2026-02-02", "to": "2026-02-08", "image": "Sem06BrasilRIODEJANEIRO.webp", "image_mobile": "Sem06BrasilRIODEJANEIRO.webp" },
+      { "from": "2026-02-09", "to": "2026-02-15", "image": "Sem07BrasilCATARATASDELIGUAZU.webp", "image_mobile": "Sem07BrasilCATARATASDELIGUAZU.webp" },
+      { "from": "2026-02-16", "to": "2026-02-22", "image": "Sem08BrasilLençoisMaranhenses(Maranhão).webp", "image_mobile": "Sem08BrasilLençoisMaranhenses(Maranhão).webp" },
+      { "from": "2026-02-23", "to": "2026-03-01", "image": "Sem09BrasilPelourinho(SalvadordeBahia).webp", "image_mobile": "Sem09BrasilPelourinho(SalvadordeBahia).webp" },
+      { "from": "2026-03-02", "to": "2026-03-08", "image": "Sem10RepublicaDominicanaSANTODOMINGO.webp", "image_mobile": "Sem10RepublicaDominicanaSANTODOMINGO.webp" },
+      { "from": "2026-03-09", "to": "2026-03-15", "image": "Sem11RepublicaDominicanaPuntaCanayBavaro.webp", "image_mobile": "Sem11RepublicaDominicanaPuntaCanayBavaro.webp" },
+      { "from": "2026-03-16", "to": "2026-03-22", "image": "Sem12RepublicaDominicanaALTOSDECHAVON.webp", "image_mobile": "Sem12RepublicaDominicanaALTOSDECHAVON.webp" },
+      { "from": "2026-03-23", "to": "2026-03-29", "image": "Sem13RepublicaDominicana.webp", "image_mobile": "Sem13RepublicaDominicana.webp" },
+      { "from": "2026-03-30", "to": "2026-04-05", "image": "Sem14ArgentinaGLACIARPERITOMORENO.webp", "image_mobile": "Sem14ArgentinaGLACIARPERITOMORENO.webp" },
+      { "from": "2026-04-06", "to": "2026-04-12", "image": "Sem15ArgentinaCIUDADDEBUENOSAIRES.webp", "image_mobile": "Sem15ArgentinaCIUDADDEBUENOSAIRES.webp" },
+      { "from": "2026-04-13", "to": "2026-04-19", "image": "Sem16ArgentinaCATEDRALDESANCARLOSDEBARILOCHE.webp", "image_mobile": "Sem16ArgentinaCATEDRALDESANCARLOSDEBARILOCHE.webp" },
+      { "from": "2026-04-20", "to": "2026-04-26", "image": "Sem17ArgentinaSALINASGRANDESJUJUY.webp", "image_mobile": "Sem17ArgentinaSALINASGRANDESJUJUY.webp" },
+      { "from": "2026-04-27", "to": "2026-05-03", "image": "Sem18PanamaCALZADADEAMDORE(CAUSEWAY).webp", "image_mobile": "Sem18PanamaIslaParaiso,SanBlas.webp" },
+      { "from": "2026-05-04", "to": "2026-05-10", "image": "Sem19Panama.webp", "image_mobile": "Sem19Panama.webp" },
+      { "from": "2026-05-11", "to": "2026-05-17", "image": "Sem20MexicoChichenItzaMexico.webp", "image_mobile": "Sem20MexicoChichenItzaMexico.webp" },
+      { "from": "2026-05-18", "to": "2026-05-24", "image": "Sem21MexicoIslaMujeres.webp", "image_mobile": "Sem21MexicoIslaMujeres.webp" },
+      { "from": "2026-05-25", "to": "2026-05-31", "image": "Sem22MexicoCancun.webp", "image_mobile": "Sem22MexicoCancun.webp" },
+      { "from": "2026-06-01", "to": "2026-06-07", "image": "Sem23IndiaTajMahal.webp", "image_mobile": "Sem23IndiaTajMahal.webp" },
+      { "from": "2026-06-08", "to": "2026-06-14", "image": "Sem24IndiaGhatsdelrioGanges(Varanasi).webp", "image_mobile": "Sem24IndiaGhatsdelrioGanges(Varanasi).webp" },
+      { "from": "2026-06-15", "to": "2026-06-21", "image": "Sem25IndiaTemploDorado(Amritsar).webp", "image_mobile": "Sem25IndiaTemploDorado(Amritsar).webp" },
+      { "from": "2026-06-22", "to": "2026-06-28", "image": "Sem26IndiaHawaMahal(Jaipur).webp", "image_mobile": "Sem26IndiaHawaMahal(Jaipur).webp" },
+      { "from": "2026-06-29", "to": "2026-07-05", "image": "Sem27EuropaMUSEODELLOUVRE.webp", "image_mobile": "Sem27EuropaToorreEiffel.webp" },
+      { "from": "2026-07-06", "to": "2026-07-12", "image": "Sem28EuropaROMA.webp", "image_mobile": "Sem28EuropaROMA.webp" },
+      { "from": "2026-07-13", "to": "2026-07-19", "image": "Sem29EuropaBARCELONABASILICADELASAGRADAFAMILIA.webp", "image_mobile": "Sem29EuropaBARCELONABASILICADELASAGRADAFAMILIA.webp" },
+      { "from": "2026-07-20", "to": "2026-07-26", "image": "Sem30EuropaLONDRESREINOUNIDO.webp", "image_mobile": "Sem30EuropaLONDRESREINOUNIDO.webp" },
+      { "from": "2026-07-27", "to": "2026-08-02", "image": "Sem31EuropaVENECIAITALIA.webp", "image_mobile": "Sem31EuropaVENECIAITALIA.webp" },
+      { "from": "2026-08-03", "to": "2026-08-09", "image": "Sem32EgiptoPiramidesdeGizaylaGranEsfinge(ElCairo).webp", "image_mobile": "Sem32EgiptoPiramidesdeGizaylaGranEsfinge(ElCairo).webp" },
+      { "from": "2026-08-10", "to": "2026-08-16", "image": "Sem33EgiptoVALLEDELOSREYES(LUXOR).webp", "image_mobile": "Sem33EgiptoVALLEDELOSREYES(LUXOR).webp" },
+      { "from": "2026-08-17", "to": "2026-08-23", "image": "Sem34EgiptoTemplosdeAbuSimbel(Asuan).webp", "image_mobile": "Sem34EgiptoTemplosdeAbuSimbel(Asuan).webp" },
+      { "from": "2026-08-24", "to": "2026-08-30", "image": "Sem35EgiptoRioNiloenAsuan.webp", "image_mobile": "Sem35EgiptoRioNiloenAsuan.png" },
+      { "from": "2026-08-31", "to": "2026-09-06", "image": "Sem36TurquiaSantaSofiaenEstambul.webp", "image_mobile": "Sem36TurquiaSantaSofiaenEstambul.webp" },
+      { "from": "2026-09-07", "to": "2026-09-13", "image": "Sem37TurquiaCAPPADOCIA.webp", "image_mobile": "Sem37TurquiaCAPPADOCIA.webp" },
+      { "from": "2026-09-14", "to": "2026-09-20", "image": "Sem38TurquiaPamukkale(CastillodeAlgodon).webp", "image_mobile": "Sem38TurquiaPamukkale(CastillodeAlgodon).webp" },
+      { "from": "2026-09-21", "to": "2026-09-27", "image": "Sem39TurquiaAntalya.webp", "image_mobile": "Sem39TurquiaAntalya.webp" },
+      { "from": "2026-09-28", "to": "2026-10-04", "image": "Sem40JordaniaPETRA.webp", "image_mobile": "Sem40JordaniaPETRA.webp" },
+      { "from": "2026-10-05", "to": "2026-10-11", "image": "Sem41JordaniaWadiRum.webp", "image_mobile": "Sem41JordaniaWadiRum.webp" },
+      { "from": "2026-10-12", "to": "2026-10-18", "image": "Sem42JordaniaMARMUERTO.webp", "image_mobile": "Sem42JordaniaMARMUERTO.webp" },
+      { "from": "2026-10-19", "to": "2026-10-25", "image": "Sem43JordaniaCIUDADELADEAMMAN.webp", "image_mobile": "Sem43JordaniaCIUDADELADEAMMAN.webp" },
+      { "from": "2026-10-26", "to": "2026-11-01", "image": "Sem44ChinaLaGranMurallaChina(Pekin).webp", "image_mobile": "Sem44ChinaLaGranMurallaChina(Pekin).webp" },
+      { "from": "2026-11-02", "to": "2026-11-08", "image": "Sem45ChinaLaCiudadProhibida(Pekin).webp", "image_mobile": "Sem45ChinaLaCiudadProhibida(Pekin).webp" },
+      { "from": "2026-11-09", "to": "2026-11-15", "image": "Sem46ChinaLosGuerrerosdeTerracota(Xi'an).webp", "image_mobile": "Sem46ChinaLosGuerrerosdeTerracota(Xi'an).webp" },
+      { "from": "2026-11-16", "to": "2026-11-22", "image": "Sem47JaponMonteFuji(RegiondelosCincoLagos).webp", "image_mobile": "Sem47JaponMonteFuji(RegiondelosCincoLagos).webp" },
+      { "from": "2026-11-23", "to": "2026-11-29", "image": "Sem48JaponSantuarioFushimiInari-taisha(Kioto).webp", "image_mobile": "Sem48JaponSantuarioFushimiInari-taisha(Kioto).webp" },
+      { "from": "2026-11-30", "to": "2026-12-06", "image": "Sem49JaponKinkaku-ji(PabellonDoradoenKioto).webp", "image_mobile": "Sem49JaponKinkaku-ji(PabellonDoradoenKioto).webp" },
+      { "from": "2026-12-07", "to": "2026-12-13", "image": "Sem50TailandiaTemplodePhraKaew.webp", "image_mobile": "Sem50TailandiaTemplodePhraKaew.webp" },
+      { "from": "2026-12-14", "to": "2026-12-20", "image": "Sem51TailandiaWatRongKhun(TemploBlanco)(ChiangRai).webp", "image_mobile": "Sem51TailandiaWatRongKhun(TemploBlanco)(ChiangRai).webp" },
+      { "from": "2026-12-21", "to": "2026-12-28", "image": "Sem52TailandiaIslasPhiPhiyMayaBay(Krabi).webp", "image_mobile": "Sem52TailandiaIslasPhiPhiyMayaBay(Krabi).webp" }
     ]
   }
 }

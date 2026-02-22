@@ -1,0 +1,11 @@
+services:
+  smartimageproxy:
+    build: .
+    container_name: smartimageproxy
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./primatourpc:/app/primatourpc:ro
+      - ./primatourcelular:/app/primatourcelular:ro
+      - ./config.json:/app/config.json:ro

@@ -6,12 +6,11 @@ FROM denoland/deno:latest
 WORKDIR /app
 
 # Create directories for the images
-RUN mkdir -p /app/desktop && mkdir -p /app/mobile
+RUN mkdir -p /app/primatourpc && mkdir -p /app/primatourcelular
 
 # Copy the dependencies file and cache them
 COPY deno.json .
-COPY deno.lock .
-RUN deno cache main.ts --lock=deno.lock
+RUN deno cache main.ts
 
 # Copy the rest of the application files
 COPY . .
@@ -20,4 +19,4 @@ COPY . .
 EXPOSE 8000
 
 # Define the command to run the application
-CMD ["run", "--allow-net", "--allow-read", "--unstable", "main.ts"]
+CMD ["run", "--allow-net", "--allow-read", "main.ts"]
