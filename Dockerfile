@@ -8,12 +8,11 @@ WORKDIR /app
 # Create directories for the images
 RUN mkdir -p /app/primatourpc && mkdir -p /app/primatourcelular
 
-# Copy the dependencies file and cache them
-COPY deno.json .
-RUN deno cache main.ts
-
-# Copy the rest of the application files
+# Copy all application files
 COPY . .
+
+# Cache dependencies
+RUN deno cache main.ts
 
 # Expose the port the app runs on
 EXPOSE 8000
